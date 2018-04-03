@@ -6,6 +6,9 @@ import time
 from .enter import wrapper
 home = Blueprint('account', __name__, template_folder='templates')
 
+@home.route('/fang',methods=['GET'])
+def fang():
+    return 'Hello World 方'
 
 @home.route('/', methods=['GET', "POST"])
 @wrapper
