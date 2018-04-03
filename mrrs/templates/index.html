@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap-datetimepicker.min.css">
+    <style>
+        .active {
+            color: gold;
+            background-color: #5bc0de;
+            text-align: center;
+        }
+
+        .reserve {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h2>Hello {{ user }}!</h2>
+        <form action="" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="dtp_input1" class="col-md-2 control-label">Date Picking</label>
+                <div class="input-group date form_date col-md-5" data-date="" data-date-format="yyyy-mm-dd"
+                     data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
+                    <input id="show_date" class="form-control" size="16" type="text" value="{{ selected_date }}"
+                           readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+                <input type="hidden" id="dtp_input2" value=""/><br/>
+            </div>
+        </form>
+        {#        <div class="col-md-10">#}
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>Time</th>
+                    {% for room in rooms %}
+                        <th>
+                            {{ room.1 }}
+                        </th>
+                    {% endfor %}
+                </tr>
+                </thead>
+                <tbody>
+                {% for p_index,period in periods %}
+                    <tr>
+                        <td>
+                            {{ period }}
+                        </td>
+                        {% for r_index,room in rooms %}
+                            {% if (r_index,p_index) in reservation_list %}
+
+{#                                {% for reservation_id,room_id,date_time,period_id,description in reservations %}#}
+{#                                    {% if room_id == r_index and period_id == p_index %}#}
+                                        <td class="active" title="{{ description }}">已预订</td>
+{#                                    {% endif %}#}
+{#                                {% endfor %}#}
+{#                                <td class="reserve" data-date={{ selected_date }} data-room_id={{ r_index }}#}
+{#                                    data-period_id={{ p_index }}></td>#}
+                            {% else %}
+                                <td class="reserve" data-date={{ selected_date }} data-room_id={{ r_index }}
+                                    data-period_id={{ p_index }}></td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {#            </div>#}
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/jquery/jquery-3.2.1.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap-datetimepicker.js"
+        charset="UTF-8"></script>
+<script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap-datetimepicker.zh-CN.js"
+        charset="UTF-8"></script>
+<script>
+    $('.form_date').datetimepicker({
+        language: 'zh-CN',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_date').datetimepicker().on('changeDate', function (ev) {
+        var select_date = $('#show_date').val();
+        console.log(select_date);
+        {#$.ajax({#}
+        {#    url:'/',#}
+        {#    type:'GET',#}
+        {#    data:{#}
+        {#        date:select_date#}
+        {#    },#}
+        {#    success:function (data) {#}
+        var new_url = '/?date=' + select_date;
+        window.location.href = new_url
+    });
+    $('.reserve').on('click', function () {
+        var date = this.dataset.date;
+        var room_id = this.dataset.room_id;
+        var period_id = this.dataset.period_id;
+        console.log(date, room_id, period_id);
+        $.ajax({
+            url: '/',
+            type: 'POST',
+            data: {
+                'date': date,
+                'room_id': room_id,
+                'period_id': period_id
+            },
+            success: function (data) {
+                window.location.href = data
+            }
+        })
+    });
+</script>
+</body>
+</html>
