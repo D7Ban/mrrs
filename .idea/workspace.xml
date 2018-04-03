@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e0e18d-1108-46fd-b367-e60b62818925" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mrrs/templates/index.html" afterPath="$PROJECT_DIR$/mrrs/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/mrrs/templates/login.html" afterPath="$PROJECT_DIR$/mrrs/templates/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mrrs/templates/lin.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/mrrs/views/home.py" afterPath="$PROJECT_DIR$/mrrs/views/home.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,17 +25,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mrrs/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mrrs/utils/db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mrrs/views/home.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+                <marker date="1522756255636" expanded="true" signature="693:714" ph="select * fro... periods" />
+                <marker date="1522756255636" expanded="true" signature="758:788" ph="select * fro... conference_rooms" />
+                <marker date="1522756255636" expanded="true" signature="839:895" ph="select * fro... reservations" />
+                <marker date="1522756255636" expanded="true" signature="1474:1561" ph="insert into reservations... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mrrs/templates/lin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mrrs/views/enter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +110,8 @@
       <list>
         <option value="$PROJECT_DIR$/mrrs/templates/index.html" />
         <option value="$PROJECT_DIR$/mrrs/templates/login.html" />
+        <option value="$PROJECT_DIR$/mrrs/templates/lin.html" />
+        <option value="$PROJECT_DIR$/mrrs/views/home.py" />
       </list>
     </option>
   </component>
@@ -128,6 +196,33 @@
               <item name="mrrs" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mrrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mrrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="db.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="mrrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="db.py" type="8704e2dd:PyFileNode" />
+              <item name="SQLHelper" type="dd8bbb05:PyElementNode" />
+            </path>
+            <path>
+              <item name="mrrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="mrrs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -141,6 +236,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,8 +314,56 @@
     <entry file="file://$PROJECT_DIR$/mrrs/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mrrs/utils/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mrrs/views/enter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mrrs/templates/lin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mrrs/views/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1522756255636" expanded="true" signature="693:714" ph="select * fro... periods" />
+            <marker date="1522756255636" expanded="true" signature="758:788" ph="select * fro... conference_rooms" />
+            <marker date="1522756255636" expanded="true" signature="839:895" ph="select * fro... reservations" />
+            <marker date="1522756255636" expanded="true" signature="1474:1561" ph="insert into reservations... " />
+          </folding>
         </state>
       </provider>
     </entry>

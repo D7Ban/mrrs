@@ -7,6 +7,11 @@ from .enter import wrapper
 home = Blueprint('account', __name__, template_folder='templates')
 
 
+
+@home.route('/lin',methods=['GET',] )
+def lin():
+    return render_template('lin.html')
+
 @home.route('/', methods=['GET', "POST"])
 @wrapper
 def index():
